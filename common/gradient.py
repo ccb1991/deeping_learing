@@ -32,6 +32,7 @@ def numerical_gradient_2d(f, X):
 
 
 def numerical_gradient(f, x):
+    """求梯度"""
     h = 1e-4 # 0.0001
     grad = np.zeros_like(x)
 
