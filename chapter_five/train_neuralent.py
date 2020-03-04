@@ -1,12 +1,6 @@
 """
 Created by 陈辰柄 
 datetime:2020/2/28 0:38
-Describe:
-"""
-
-"""
-Created by 陈辰柄 
-datetime:2020/2/22 3:52
 Describe:使用mnist数据集训练
 """
 
@@ -29,6 +23,7 @@ learning_rate = 0.1
 # epoch是一个单位，一个epoch表示学习中所有训练数据均被使用过一次时的更新次数
 iter_per_epoch = max(train_size / batch_size, 1)
 
+# input_size表示有784个节点，隐藏层节点数为50
 network = TwoLayerNet(input_size=784, hidden_size=50, output_size=10)
 
 for i in range(iters_num):
